@@ -4,8 +4,13 @@ Method to group an array of objects.
 
 ```
 groupBy(
-  key: string | (item:any,index:number) => string,
-  selector?: (item:any) => any
+  key: string | (
+    item: Record<string,any>,
+    index: number
+  ) => string,
+  selector?: (
+    item: Record<string,any>
+  ) => any
 )
 ```
 
