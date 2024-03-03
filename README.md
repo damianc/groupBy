@@ -23,8 +23,41 @@ console.log(
   data.groupBy('lang', book => book.title)
 );
 
+/*
+{
+  "en": [
+    "Coding Apes",
+    "Cracking JS"
+  ],
+  "pl": [
+    "Kodujące małpy"
+  ]
+}
+*/
+
 // group books by first letter of title
 console.log(
   data.groupBy(book => book.title[0])
 );
+
+/*
+{
+  "C": [
+    {
+      "lang": "en",
+      "title": "Coding Apes"
+    },
+    {
+      "lang": "en",
+      "title": "Cracking JS"
+    }
+  ],
+  "K": [
+    {
+      "lang": "pl",
+      "title": "Kodujące małpy"
+    }
+  ]
+}
+*/
 ```
