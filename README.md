@@ -34,7 +34,9 @@ console.log(
   ]
 }
 */
+```
 
+```
 // group books by first letter of title
 console.log(
   data.groupBy(book => book.title[0])
